@@ -1,6 +1,6 @@
 {
-  "name": "useful-developer-tools",
-  "displayName": "Useful Developer Tools",
+  "name": "vscode-developer-tools",
+  "displayName": "VSCode Developer Tools",
   "description": "A collection of useful tools and extensions that make programming easier and more productive",
   "version": "1.0.0",
   "publisher": "mahdihajian",
