@@ -1,0 +1,39 @@
+{
+  "name": "extension-installer",
+  "displayName": "Extension Installer",
+  "description": "Install multiple VS Code extensions from a list",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extensionInstaller.installAll"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extensionInstaller.installAll",
+        "title": "Install All Extensions"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "prepack": "npm run compile",
+    "pack": "vsce package",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^16.x",
+    "@types/vscode": "^1.60.0",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "@vscode/vsce": "^3.7.1"
+  }
+}
