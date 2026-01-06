@@ -3,6 +3,7 @@
   "displayName": "Extension Installer",
   "description": "Install multiple VS Code extensions from a list",
   "version": "1.0.0",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.60.0"
   },
