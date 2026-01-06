@@ -1,40 +1,26 @@
 {
-  "name": "extension-installer",
-  "displayName": "Extension Installer",
-  "description": "Install multiple VS Code extensions from a list",
+  "name": "useful-developer-tools",
+  "displayName": "Useful Developer Tools",
+  "description": "A collection of useful tools and extensions that make programming easier and more productive",
   "version": "1.0.0",
+  "publisher": "mahdihajian",
   "license": "MIT",
   "engines": {
     "vscode": "^1.60.0"
   },
   "categories": [
-    "Other"
+    "Extension Packs"
   ],
-  "activationEvents": [
-    "onCommand:extensionInstaller.installAll"
+  "extensionPack": [
+    "mahdihajian.shelf",
+    "mahdihajian.angular-jasmine-test-runner",
+    "rezakalbali.bookmark-npm-scripts",
+    "rezakalbali.json-path-copier"
   ],
-  "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "extensionInstaller.installAll",
-        "title": "Install All Extensions"
-      }
-    ]
-  },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "prepack": "npm run compile",
-    "pack": "vsce package",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
+    "pack": "vsce package"
   },
   "devDependencies": {
-    "@types/node": "^16.x",
-    "@types/vscode": "^1.60.0",
-    "typescript": "^4.4.3"
-  },
-  "dependencies": {
     "@vscode/vsce": "^3.7.1"
   }
 }

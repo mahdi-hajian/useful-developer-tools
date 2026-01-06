@@ -1,80 +1,52 @@
-# Extension Installer
+# Useful Developer Tools
 
-یک اکستنشن VS Code که می‌تواند لیستی از اکستنشن‌ها را به صورت خودکار نصب کند.
+An Extension Pack for VS Code that includes useful and essential tools for programming. This pack contains extensions that make programming easier and faster.
 
-## ویژگی‌ها
+## Features
 
-- نصب خودکار چندین اکستنشن با یک کلیک
-- نمایش progress bar هنگام نصب
-- بررسی اینکه آیا اکستنشن قبلاً نصب شده است
-- نمایش پیام‌های خطا در صورت عدم موفقیت
-- نمایش نتیجه نهایی نصب (موفق، رد شده، قبلاً نصب شده)
+- One-click installation of all useful tools
+- Includes practical extensions to increase programming productivity
+- Tools that simplify everyday programming tasks
+- Automatic updates for existing extensions
 
-## نصب اکستنشن
+## Installation
 
-1. فایل `.vsix` را از Releases دانلود کنید
-2. در VS Code، به Extensions بروید (Ctrl+Shift+X)
-3. روی سه نقطه (⋯) کلیک کنید و "Install from VSIX..." را انتخاب کنید
-4. فایل `.vsix` را انتخاب کنید
+### From VS Code Marketplace
 
-## نحوه استفاده
+1. Open VS Code
+2. Go to Extensions (Ctrl+Shift+X)
+3. Search for "Useful Developer Tools"
+4. Click Install
+5. VS Code will automatically install all extensions in the pack
 
-1. Command Palette را باز کنید (Ctrl+Shift+P یا F1)
-2. دستور **"Install All Extensions"** را تایپ کنید و Enter بزنید
-3. اکستنشن شروع به نصب لیست اکستنشن‌ها می‌کند
-4. progress bar پیشرفت نصب را نشان می‌دهد
-5. در پایان، پیام نتیجه نصب نمایش داده می‌شود
+### From VSIX File
 
-## ویرایش لیست اکستنشن‌ها
+1. Download the `.vsix` file from Releases
+2. In VS Code, go to Extensions (Ctrl+Shift+X)
+3. Click the three dots (⋯) and select "Install from VSIX..."
+4. Select the `.vsix` file
 
-برای تغییر لیست اکستنشن‌هایی که باید نصب شوند:
+## Extensions Included in This Pack
 
-1. فایل `src/config/ExtensionConfig.ts` را باز کنید
-2. آرایه `EXTENSION_IDS` را ویرایش کنید
-3. IDهای اکستنشن‌های مورد نظر خود را اضافه یا حذف کنید
-4. اکستنشن را دوباره کامپایل و نصب کنید
+This Extension Pack includes the following tools:
 
-### مثال:
+- **mahdihajian.shelf** - Code management and storage tool
+- **mahdihajian.angular-jasmine-test-runner** - Run Angular Jasmine tests
+- **rezakalbali.bookmark-npm-scripts** - Bookmark and quick access to NPM Scripts
+- **rezakalbali.json-path-copier** - Easily copy JSON paths
 
-```typescript
-export const EXTENSION_IDS: string[] = [
-    'ms-python.python',
-    'esbenp.prettier-vscode',
-    'dbaeumer.vscode-eslint',
-    'ms-vscode.vscode-json'
-];
-```
+## How to Use
 
-## نحوه پیدا کردن Extension ID
+After installing the Extension Pack, all extensions in the pack will be automatically installed. If an extension is already installed, VS Code will skip it and continue with the rest.
 
-Extension ID معمولاً به صورت `publisher.name` است. می‌توانید آن را از:
+## Common Issues
 
-- **صفحه اکستنشن در VS Code Marketplace**: در URL یا اطلاعات اکستنشن
-- **URL اکستنشن**: `https://marketplace.visualstudio.com/items?itemName=PUBLISHER.NAME`
-  - مثال: `https://marketplace.visualstudio.com/items?itemName=ms-python.python`
-  - Extension ID: `ms-python.python`
+### Extensions Not Installing
+- Check your internet connection
+- Restart VS Code
+- Make sure VS Code is up to date (version 1.60.0 or higher)
 
-## مثال Extension ID
-
-```
-ms-python.python
-esbenp.prettier-vscode
-dbaeumer.vscode-eslint
-ms-vscode.vscode-json
-```
-
-## مشکلات رایج
-
-### اکستنشن نصب نمی‌شود
-- مطمئن شوید Extension ID صحیح است (فرمت: `publisher.name`)
-- اتصال اینترنت خود را بررسی کنید
-- VS Code را restart کنید
-
-### پیام "Extension already installed"
-- این پیام طبیعی است و به معنای این است که اکستنشن قبلاً نصب شده
-- اکستنشن از لیست رد می‌شود و به بقیه ادامه می‌دهد
-
-### خطای نصب
-- در صورت خطا، پیام خطا نمایش داده می‌شود
-- می‌توانید اکستنشن را به صورت دستی از Marketplace نصب کنید
+### Some Extensions Are Already Installed
+- This is normal and won't cause any issues
+- VS Code will only install new extensions
 
