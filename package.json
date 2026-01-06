@@ -13,6 +13,7 @@
     "url": "https://github.com/mahdi-hajian/useful-developer-tools/issues"
   },
   "homepage": "https://github.com/mahdi-hajian/useful-developer-tools#readme",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.60.0"
   },
