@@ -15,7 +15,7 @@
   "homepage": "https://github.com/mahdi-hajian/useful-developer-tools#readme",
   "icon": "icon.png",
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
     "Extension Packs"
@@ -30,7 +30,6 @@
     "pack": "vsce package"
   },
   "devDependencies": {
-    "@types/vscode": "^1.80.0",
     "@vscode/vsce": "^3.7.1"
   }
 }
