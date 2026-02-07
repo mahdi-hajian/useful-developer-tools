@@ -2,7 +2,7 @@
   "name": "vscode-developer-tools",
   "displayName": "VSCode Developer Tools",
   "description": "A collection of useful tools and extensions that make programming easier and more productive",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "mahdihajian",
   "license": "MIT",
   "repository": {
@@ -21,7 +21,7 @@
     "Extension Packs"
   ],
   "extensionPack": [
-    "mahdihajian.shelf",
+    "mahdihajian.vscode-shelf",
     "mahdihajian.angular-jasmine-test-runner",
     "rezakalbali.bookmark-npm-scripts",
     "rezakalbali.json-path-copier"
